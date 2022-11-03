@@ -8,8 +8,11 @@ require('colors');
 
 console.clear();
 
+
 createdFile( argv.b, argv.l, argv.h )
+
 .then(filename => console.log(filename.rainbow,'created'))
+
 .catch ( err => console.log(err));
 
 
